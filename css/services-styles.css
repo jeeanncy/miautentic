@@ -1,0 +1,38 @@
+section {
+  margin: 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.info img {
+  height: 15rem;
+}
+
+.info .info-text {
+  max-width: 350px;
+  text-align: left;
+}
+
+.info .info-text h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.info .info-text p {
+  font-weight: 300;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.info .info-text a {
+  font-weight: 400;
+  color: #8c30f5;
+  font-size: 0.8rem;
+}

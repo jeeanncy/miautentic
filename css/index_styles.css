@@ -1,0 +1,109 @@
+.banner {
+  display: flex;
+  align-items: center;
+  background-image: url("../assets/images/paws.png"),
+    linear-gradient(to left, #8c30f5, #d6b1ff);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: contain;
+  background-repeat: space;
+  position: relative;
+}
+
+.banner-img,
+.banner-info {
+  height: 100%;
+  flex: 1;
+}
+
+.banner-img img {
+  height: inherit;
+}
+
+.banner-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-info .heart {
+  width: 6rem;
+  margin-bottom: 1rem;
+}
+
+.banner-info .dots {
+  width: 3.5rem;
+  margin-top: 3rem;
+  align-self: center;
+}
+
+.banner-info .text1,
+.text2,
+.text3 {
+  display: block;
+}
+
+.banner-info .text1 {
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  color: #ffcc4c;
+  margin-bottom: 1.4rem;
+}
+
+.banner-info .text2 {
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffcc4c;
+  margin-bottom: 1.4rem;
+  background-color: #69467e;
+  width: fit-content;
+  padding: 0 0.6rem;
+  border-radius: 0.4rem;
+}
+
+.banner-info .text3 {
+  margin-left: 2rem;
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 1rem;
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.info img {
+  height: calc(100% - 4rem);
+  align-self: flex-end;
+}
+
+.info .info-text {
+  max-width: 350px;
+  text-align: left;
+}
+
+.info .info-text h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.info .info-text p {
+  font-weight: 300;
+  color: #2a2b30;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+.info .info-text a {
+  font-weight: 400;
+  color: #8c30f5;
+  font-size: 0.8rem;
+}

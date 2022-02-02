@@ -1,0 +1,274 @@
+* {
+  font-family: "Baloo Chettan 2", cursive;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.menu {
+  background: white;
+  border: 1px solid rgb(236, 236, 236);
+}
+
+.menu ul {
+  list-style-type: none;
+  height: 65px;
+  padding: 0 5rem;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-items,
+.menu-right-items {
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.menu-items {
+  gap: 3rem;
+}
+
+.menu-right-items {
+  gap: 1.5rem;
+}
+
+.menu-right-items i {
+  color: #8c30f5;
+  font-size: 1rem;
+}
+
+.menu .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.menu .logo i {
+  margin-right: 0.4rem;
+}
+
+.menu .logo a {
+  color: #2c2c2c;
+  font-family: "Inter", sans-serif;
+}
+
+.menu li a.menu-btn {
+  color: #2c2c2c;
+  transition: 0.3s;
+  font-family: "Inter", sans-serif;
+}
+
+.menu li a.menu-btn.active {
+  color: #8c30f5;
+  font-weight: 600;
+}
+
+.menu li a.menu-btn:hover {
+  color: #c28ff8;
+}
+
+.btn-main,
+.btn-secondary {
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-main {
+  background: #f1e4ff;
+  color: #8c30f5;
+}
+
+.btn-secondary {
+  background: #8c30f5;
+  color: #f1e4ff;
+}
+
+.full-height {
+  height: calc(100vh - 65px);
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 5rem;
+}
+
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: #f4f5f7;
+}
+
+.testimonios h1 {
+  font-size: 2rem;
+  margin: 0rem;
+}
+
+.testimonios span {
+  margin: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.testimonios-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.testimonios-list li {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.card-content {
+  background: white;
+  text-align: center;
+  position: relative;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  padding: 0.5rem;
+}
+
+.card-content::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid white;
+  bottom: -15px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.card-content h2 {
+  font-size: 1.1rem;
+}
+
+.card-content p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.card-autor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.card-autor img {
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+}
+
+.card-autor .card-autor-title {
+  font-family: "Baloo Chettan 2", cursive;
+  font-weight: 700;
+  color: #ffcc4c;
+  background-color: #69467e;
+  width: fit-content;
+  padding: 0 0.6rem;
+  border-radius: 0.4rem;
+}
+
+.card-autor span {
+  display: block;
+}
+
+.card-autor .card-autor-social i {
+  color: #8c30f5;
+  margin: 0 0.5rem;
+}
+
+footer {
+  background-color: #0b0d17;
+  color: whitesmoke;
+  padding: 2rem 0;
+}
+
+.footer-container {
+  margin: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.footer-top-items,
+.footer-bottom-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  color: #d6b1ff;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-logo i {
+  margin-right: 0.4rem;
+}
+
+.footer-top-items p {
+  max-width: 250px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-top-items h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.05rem;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-top-items ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.4rem;
+  font-weight: 200;
+  font-size: 0.75rem;
+}
+
+.footer-top-items ul li {
+  font-family: "Inter", sans-serif;
+}
+
+.footer-top-items ul li i {
+  color: #d6b1ff;
+}
+
+.footer-bottom-items span {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+}
