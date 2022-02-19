@@ -4,19 +4,19 @@ section {
 
 .info {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
 }
 
 .info img {
   height: 15rem;
+  max-height: 100%;
 }
 
 .info .info-text {
   max-width: 350px;
-  text-align: left;
+  text-align: center;
 }
 
 .info .info-text h1 {

@@ -22,49 +22,57 @@
 
 <body>
   <!-- Navbar -->
-  <header>
-    <nav class="menu">
-      <ul>
-        <div>
-          <li class="logo">
-            <a href="../index.html">
-              <i class="fas fa-cat"></i> Miautentic
-            </a>
-          </li>
-        </div>
+  <header class="header">
+    <section class="container">
+      <a class="btn-burguer">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="logo">
+        <a href="../index.html">
+          <i class="fas fa-cat"></i> Miautentic
+        </a>
+      </div>
+      <a class="btn-shoppingcart">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+      <nav class="menu">
+        <a class="btn-close">
+          <i class="fas fa-times"></i>
+        </a>
         <div class="menu-items">
-          <li>
-            <a class="menu-btn" href="../pages/products.html"> Productos </a>
-          </li>
-          <li>
-            <a class="menu-btn" href="../pages/services.html">Servicios</a>
-          </li>
-          <li>
-            <a class="menu-btn active" href="../pages/about_us.html">Nosotros</a>
-          </li>
-          <li>
-            <a class="menu-btn" href="../pages/contact_us.html">
-              Contáctenos
-            </a>
-          </li>
+          <ul>
+            <li>
+              <a href="../pages/products.html"> Productos </a>
+            </li>
+            <li>
+              <a href="../pages/services.html">Servicios</a>
+            </li>
+            <li>
+              <a class="active" href="../pages/about_us.html">Nosotros</a>
+            </li>
+            <li>
+              <a href="../pages/contact_us.html">
+                Contáctenos
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="menu-right-items">
-          <li>
-            <i class="fas fa-shopping-cart"></i>
-          </li>
-          <li>
-            <a class="btn-main" href="#">Inicia sesión</a>
-          </li>
-          <li>
-            <a class="btn-secondary" href="#">Regístrate</a>
-          </li>
+        <div class="menu-icons">
+          <ul>
+            <li>
+              <a class="btn-secondary" href="#">Inicia sesión</a>
+            </li>
+            <li>
+              <a class="btn-main" href="#">Regístrate</a>
+            </li>
+          </ul>
         </div>
-      </ul>
-    </nav>
+      </nav>
+    </section>
+    <div class="overlay"></div>
   </header>
-
+  <!-- Testimonos -->
   <main>
-    <!-- Testimonos -->
     <div class="testimonios full-height">
       <h1>Nuestro equipo</h1>
       <span>Lorem ipsum dolor, sit amet consectetur </span>
@@ -134,15 +142,14 @@
       </nav>
     </div>
   </main>
-
   <!-- Footer -->
-  <footer>
-    <div class="footer-container">
+  <footer class="footer">
+    <div class="container">
       <div class="footer-top-items">
         <div>
-          <span class="footer-logo">
+          <div class="footer-logo">
             <i class="fas fa-cat"></i> Miautentic
-          </span>
+          </div>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
             officia dolorem quia deleniti voluptatibus laborum non quibusdam
@@ -169,11 +176,9 @@
         <div>
           <h3>Contactos</h3>
           <ul>
-            <li><i class="fas fa-envelope"></i> hello@azudevep.pe</li>
-            <li><i class="fas fa-phone"></i> +51 944410507</li>
-            <li>
-              <i class="fas fa-map-pin"></i> Av. La Molina - La Fontana 1024
-            </li>
+            <li><i class="fas fa-envelope"></i>hello@azudevep.pe</li>
+            <li><i class="fas fa-phone"></i>+51 944410507</li>
+            <li><i class="fas fa-map-pin"></i>Av. La Molina - La Fontana 1024</li>
           </ul>
         </div>
       </div>
@@ -181,7 +186,7 @@
         <div>
           <span>&copy; 2021 AzulDevep Todos los derechos Reservados</span>
         </div>
-        <div class="footer-right-bottom-items">
+        <div>
           <span>Términos & Condiciones</span>
           <span>|</span>
           <span>Política de Privancidad</span>
@@ -193,6 +198,7 @@
       </div>
     </div>
   </footer>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

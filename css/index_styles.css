@@ -1,40 +1,37 @@
 .banner {
   display: flex;
-  align-items: center;
+  justify-content: center;
   background-image: url("../assets/images/paws.png"),
     linear-gradient(to left, #8c30f5, #d6b1ff);
   background-blend-mode: multiply;
   background-position: center;
   background-size: contain;
   background-repeat: space;
-  position: relative;
 }
 
-.banner-img,
-.banner-info {
-  height: 100%;
-  flex: 1;
-}
-
-.banner-img img {
-  height: inherit;
+.banner * {
+  /* border: 1px solid blue; */
 }
 
 .banner-info {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 1rem;
+  text-align: center;
 }
 
 .banner-info .heart {
   width: 6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  align-self: flex-start;
 }
 
 .banner-info .dots {
   width: 3.5rem;
   margin-top: 3rem;
-  align-self: center;
+  align-self: flex-end;
 }
 
 .banner-info .text1,
@@ -65,7 +62,7 @@
 }
 
 .banner-info .text3 {
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   font-family: "Baloo Chettan 2", cursive;
   font-size: 1rem;
   font-weight: 400;
@@ -74,20 +71,30 @@
 
 .info {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
   background-image: url("../assets/images/animated_shape.svg");
+  background-size: cover;
 }
 
-.info img {
-  height: calc(100% - 4rem);
-  align-self: flex-end;
+.info-img {
+  display: flex;
+  align-items: flex-end;
+}
+
+.info-img img {
+  height: 25rem;
 }
 
 .info .info-text {
-  max-width: 350px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 21.875rem;
+  text-align: center;
+  flex: 1;
 }
 
 .info .info-text h1 {
@@ -107,4 +114,129 @@
   font-weight: 400;
   color: #8c30f5;
   font-size: 0.8rem;
+}
+
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: #f4f5f7;
+}
+
+.testimonios > * {
+}
+
+.testimonios h1 {
+  font-size: 2rem;
+  margin: 0rem;
+}
+
+.testimonios span {
+  margin: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.testimonios-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 0;
+  list-style: none;
+  margin: 2rem 0;
+}
+
+.testimonios-list li {
+  margin: 0;
+  max-width: 20rem;
+}
+
+.card-content {
+  background: white;
+  text-align: center;
+  position: relative;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  padding: 0.5rem;
+}
+
+.card-content::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid white;
+  bottom: -15px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.card-content h2 {
+  font-size: 1.1rem;
+}
+
+.card-content p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.card-autor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.card-autor img {
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+}
+
+.card-autor .card-autor-title {
+  font-family: "Baloo Chettan 2", cursive;
+  font-weight: 700;
+  color: #ffcc4c;
+  background-color: #69467e;
+  width: fit-content;
+  padding: 0 0.6rem;
+  border-radius: 0.4rem;
+}
+
+.card-autor span {
+  display: block;
+}
+
+.card-autor .card-autor-social i {
+  color: #8c30f5;
+  margin: 0 0.5rem;
+}
+
+@media screen and (min-width: 50em) {
+  .info {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .info .info-text {
+    order: 1;
+    text-align: left;
+  }
+
+  .info-img {
+    align-self: stretch;
+  }
+
+  .info-img img {
+    max-height: calc(100% - 4rem);
+    height: auto;
+  }
 }
