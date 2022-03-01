@@ -74,11 +74,54 @@
   <!--  -->
   <main>
     <div class="container">
-      <div class="products-grid">
+      <aside class="sidebar">
         <div class="aside-title">
           <h4>Todos los productos</h4>
           <span>1,234 Artículos</span>
         </div>
+        <div class="aside-content">
+          <h4>Alimentos</h4>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+          <div class="aside-separator"></div>
+          <h4>Marca</h4>
+          <ul>
+            <li>
+              <input type="checkbox" id="cbox2" value="second_checkbox" />Item 1
+            </li>
+            <li>
+              <input type="checkbox" id="cbox2" value="second_checkbox" />Item 2
+            </li>
+            <li>
+              <input type="checkbox" id="cbox2" value="second_checkbox" />Item 3
+            </li>
+            <li>
+              <input type="checkbox" id="cbox2" value="second_checkbox" />Item 4
+            </li>
+          </ul>
+          <div class="aside-separator"></div>
+          <h4>Mascotas</h4>
+          <ul>
+            <li>
+              <input type="checkbox" id="cbox2" value="second_checkbox" />Item 1
+            </li>
+            <li>
+              <input type="checkbox" id="cbox2" value="second_checkbox" />Item 2
+            </li>
+            <li>
+              <input type="checkbox" id="cbox2" value="second_checkbox" />Item 3
+            </li>
+            <li>
+              <input type="checkbox" id="cbox2" value="second_checkbox" />Item 4
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="products-container">
         <div class="products-bar">
           <input type="text" placeholder="Buscar " />
           <div class="products-selector">
@@ -87,49 +130,7 @@
             <i class="fas fa-chevron-down"></i>
           </div>
         </div>
-        <aside>
-          <div class="aside-content">
-            <h4>Alimentos</h4>
-            <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-            </ul>
-            <div class="aside-separator"></div>
-            <h4>Marca</h4>
-            <ul>
-              <li>
-                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 1
-              </li>
-              <li>
-                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 2
-              </li>
-              <li>
-                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 3
-              </li>
-              <li>
-                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 4
-              </li>
-            </ul>
-            <div class="aside-separator"></div>
-            <h4>Mascotas</h4>
-            <ul>
-              <li>
-                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 1
-              </li>
-              <li>
-                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 2
-              </li>
-              <li>
-                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 3
-              </li>
-              <li>
-                <input type="checkbox" id="cbox2" value="second_checkbox" />Item 4
-              </li>
-            </ul>
-          </div>
-        </aside>
+
         <div class="items-grid">
           <div class="product-item">
             <img src="../assets/images/catfood.webp" alt="" />
@@ -196,7 +197,6 @@
             <a class="btn-secondary" href="#">Agregar <i class="fas fa-shopping-cart"></i></a>
           </div>
         </div>
-
       </div>
     </div>
   </main>

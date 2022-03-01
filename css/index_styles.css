@@ -126,9 +126,6 @@
   background: #f4f5f7;
 }
 
-.testimonios > * {
-}
-
 .testimonios h1 {
   font-size: 2rem;
   margin: 0rem;
@@ -144,7 +141,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-
   padding: 0;
   list-style: none;
   margin: 2rem 0;
