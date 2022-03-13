@@ -21,6 +21,10 @@ html {
   box-sizing: inherit;
 }
 
+.hideScroll {
+  overflow-y: hidden;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -88,9 +92,10 @@ a {
   flex-direction: column;
   opacity: 0;
   visibility: hidden;
-  z-index: 1;
   transform: translateX(-100%);
   background: white;
+  overflow-y: scroll;
+  z-index: 1;
 }
 
 .menu.show {
@@ -256,10 +261,6 @@ a {
   margin-right: 0.4rem;
 }
 
-.footer-top-items > div {
-  /* border: 1px solid red; */
-}
-
 .footer-top-items p {
   max-width: 250px;
   font-size: 0.8rem;
@@ -347,7 +348,7 @@ a {
   }
 
   .menu {
-    position: relative;
+    position: static;
     flex-direction: row;
     transform: translateX(0%);
     opacity: 1;
@@ -368,12 +369,14 @@ a {
   .menu-items > ul {
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    height: 100%;
     gap: 3rem;
-    padding-left: 1.5rem;
+    padding-left: 0;
   }
 
   .menu-icons > ul {
-    padding: 0;
+    padding: 0.4rem;
     gap: 1rem;
   }
 }

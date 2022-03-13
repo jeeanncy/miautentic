@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="../favicon.ico" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -76,10 +75,15 @@
     <div class="container">
       <aside class="sidebar">
         <div class="aside-title">
-          <h4>Todos los productos</h4>
+          <a class="btn-sidebar-close">
+            <i class="fas fa-times"></i>
+          </a>
+          <h5>Todos los productos</h5>
           <span>1,234 Artículos</span>
         </div>
         <div class="aside-content">
+          <h5>Categorías</h5>
+          <div class="aside-separator"></div>
           <h4>Alimentos</h4>
           <ul>
             <li>Item 1</li>
@@ -121,9 +125,14 @@
           </ul>
         </div>
       </aside>
+
       <div class="products-container">
         <div class="products-bar">
-          <input type="text" placeholder="Buscar " />
+          <a class="btn-filter">
+            <i class="fa-solid fa-filter"></i>
+            Filtrar
+          </a>
+          <input class="search" type="text" placeholder="Buscar " />
           <div class="products-selector">
             <span>Ordenar por:</span>
             <span>Más vendido</span>
