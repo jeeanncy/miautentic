@@ -1,0 +1,194 @@
+h1 {
+  font-family: var(--font2);
+  color: var(--primary-color);
+}
+
+.main {
+  background-image: linear-gradient(to left, #8c30f5, #d6b1ff);
+}
+
+.main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  padding: 2rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 90%;
+  border-radius: 1rem;
+}
+
+.form > * {
+  padding: 0;
+  margin: 0;
+}
+
+.data {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 2rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+
+.input-data {
+  position: relative;
+  height: 2.5rem;
+  width: 100%;
+}
+
+.textarea-data {
+  position: relative;
+  height: 5.5rem;
+  width: 100%;
+}
+
+.input-data input,
+.textarea-data textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid silver;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.textarea-data textarea {
+  border-right: 2px solid silver;
+  resize: none;
+  padding-top: 10px;
+}
+
+.input-data label,
+.textarea-data label {
+  position: absolute;
+  top: 0.4rem;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label,
+.textarea-data textarea:focus ~ label,
+.textarea-data textarea:valid ~ label {
+  transform: translateY(-1.25rem);
+  font-size: 0.938rem;
+  color: #8c30f5;
+}
+
+.input-data .underline,
+.textarea-data .underline {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  background: #8c30f5;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.textarea-data .rightline {
+  position: absolute;
+  content: "";
+  height: 90%;
+  width: 2px;
+  top: 0;
+  right: 0;
+  background: #8c30f5;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-data input:focus ~ .underline,
+.input-data input:valid ~ .underline,
+.textarea-data textarea:focus ~ .underline,
+.textarea-data textarea:valid ~ .underline,
+.textarea-data textarea:focus ~ .rightline,
+.textarea-data textarea:valid ~ .rightline {
+  transform: scaleX(1);
+}
+
+.conditional {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #8c30f5;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  outline: 0;
+  flex-grow: 0;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background 300ms;
+  cursor: pointer;
+}
+
+[type="checkbox"]::before {
+  content: "";
+  color: transparent;
+  display: block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  border: 0;
+  background-color: transparent;
+  background-size: contain;
+  box-shadow: inset 0 0 0 1px #ccd3d8;
+}
+
+[type="checkbox"]:checked {
+  background-color: currentcolor;
+}
+
+[type="checkbox"]:checked::before {
+  box-shadow: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
+}
+
+[type="checkbox"]:disabled {
+  background-color: #ccd3d8;
+  opacity: 0.84;
+  cursor: not-allowed;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+@media screen and (min-width: 40em) {
+  .group {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .form {
+    width: 60%;
+  }
+}

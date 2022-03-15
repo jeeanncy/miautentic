@@ -181,6 +181,7 @@ a {
   font-family: var(--font2);
   font-size: 0.9rem;
   font-weight: 500;
+  border: none;
 }
 
 .btn-main {

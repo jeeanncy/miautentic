@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="../css/general.css" />
-  <link rel="stylesheet" href="../css/services-styles.css" />
+  <link rel="stylesheet" href="../css/contact_us.css" />
 
   <title>Miautentic</title>
 </head>
@@ -70,24 +70,55 @@
     <div class="overlay"></div>
   </header>
   <!-- Formulario -->
-  <form action="" method="post">
-    <label for="nombre">Nombre </label>
-    <input type="text" name="introducir_nombre" placeholder="Escribe tu nombre" />
-    <label for="email">Email </label>
-    <input type="email" name="introducir_email" placeholder="Escribe tu Email" />
-    <label for="telefone">Teléfono </label>
-    <input type="tel" name="introducir_telefono" placeholder="Escribe tu teléfono" />
-    <label for="asunto">Asunto </label>
-    <input type="text" name="introducir_asunto" placeholder="Escribe un asunto" />
-    <label for="mensaje">Mensaje </label>
-    <textarea name="introducir_mensaje" placeholder="Deja aquí tu mensaje"></textarea>
-    <br />
-    <input type="checkbox" id="cbox" value="checkbox" />
-    <label for="cbox">Acepto compartir mis datos</label>
-    <br />
-    <button type="submit" value="enviar_formulario">Enviar</button>
-    <button type="submit" value="limpiar_formulario">Limpiar</button>
-  </form>
+  <div class="main">
+    <div class="container full-screen-min">
+      <form class="form" action="" method="post">
+        <h1>CONTACTANOS</h1>
+
+        <div class="data">
+          <div class="group">
+            <div class="input-data">
+              <input type="text" name="introducir_nombre" required />
+              <label for="nombre">Nombre </label>
+              <div class="underline"></div>
+            </div>
+            <div class="input-data">
+              <input type="email" name="introducir_email" required />
+              <label for="email">Email </label>
+              <div class="underline"></div>
+            </div>
+          </div>
+          <div class="group">
+            <div class="input-data">
+              <input type="tel" name="introducir_telefono" required />
+              <label for="telefone">Teléfono </label>
+              <div class="underline"></div>
+
+            </div>
+            <div class="input-data">
+              <input type="text" name="introducir_asunto" required />
+              <label for="asunto">Asunto </label>
+              <div class="underline"></div>
+            </div>
+          </div>
+          <div class="textarea-data">
+            <textarea name="introducir_mensaje" required></textarea>
+            <label for="mensaje">Mensaje </label>
+            <div class="rightline"></div>
+            <div class="underline"></div>
+          </div>
+          <div class="conditional">
+            <input type="checkbox" id="cbox" value="checkbox">
+            <label for="cbox">Acepto compartir mis datos</label>
+          </div>
+          <div class="buttons">
+            <button class="btn-main" type="submit" value="enviar_formulario">Enviar</button>
+            <button class="btn-secondary" type="submit" value="limpiar_formulario">Limpiar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
