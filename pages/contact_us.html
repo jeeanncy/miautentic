@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="descripción" content="Página de contacto">
+  <meta name="description" content="Contactate con nosotros y agenda tu próxima cita" />
+  <meta name="keywords" content="veterinaria gatos perros mascotas">
   <link rel="icon" href="../favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +17,7 @@
   <link rel="stylesheet" href="../css/general.css" />
   <link rel="stylesheet" href="../css/contact_us.css" />
 
-  <title>Miautentic</title>
+  <title>Miautentic | Contáctenos</title>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
               <a href="../pages/products.html"> Productos </a>
             </li>
             <li>
-              <a href="../pages/services.html">Servicios</a>
+              <a href="../pages/services.html">Voluntariado</a>
             </li>
             <li>
               <a href="../pages/about_us.html">Nosotros</a>
@@ -74,43 +75,43 @@
   <div class="main">
     <div class="container full-screen-min">
       <form class="form" action="" method="post">
-        <h1>CONTACTANOS</h1>
+        <h1>CONTACTENOS</h1>
 
         <div class="data">
           <div class="group">
             <div class="input-data">
-              <input type="text" name="introducir_nombre" required />
-              <label for="nombre">Nombre </label>
+              <input type="text" name="nombre" required />
+              <label for="nombre">Nombre Completo </label>
               <div class="underline"></div>
             </div>
             <div class="input-data">
-              <input type="email" name="introducir_email" required />
+              <input type="email" name="email" required />
               <label for="email">Email </label>
               <div class="underline"></div>
             </div>
           </div>
           <div class="group">
             <div class="input-data">
-              <input type="tel" name="introducir_telefono" required />
-              <label for="telefone">Teléfono </label>
+              <input type="number" name="dni" required />
+              <label for="dni">Dni </label>
               <div class="underline"></div>
 
             </div>
             <div class="input-data">
-              <input type="text" name="introducir_asunto" required />
-              <label for="asunto">Asunto </label>
+              <input type="number" name="edad" required />
+              <label for="edad">Edad </label>
               <div class="underline"></div>
             </div>
           </div>
           <div class="textarea-data">
-            <textarea name="introducir_mensaje" required></textarea>
+            <textarea name="mensaje" required></textarea>
             <label for="mensaje">Mensaje </label>
             <div class="rightline"></div>
             <div class="underline"></div>
           </div>
           <div class="conditional">
-            <input type="checkbox" id="cbox" value="checkbox">
-            <label for="cbox">Acepto compartir mis datos</label>
+            <input type="checkbox" id="cbox" value="checkbox" required>
+            <label for="cbox">Acepto los términos y condiciones</label>
           </div>
           <div class="buttons">
             <button class="btn-main" type="submit" value="enviar_formulario">Enviar</button>
