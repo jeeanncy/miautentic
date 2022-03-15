@@ -175,7 +175,7 @@ main .container {
   font-size: 0.8rem;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 62em) {
   .header {
     z-index: 2;
   }
