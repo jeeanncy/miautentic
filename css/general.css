@@ -190,6 +190,7 @@ button {
   font-size: 0.9rem;
   font-weight: 500;
   border: none;
+  cursor: pointer;
 }
 
 .btn-main {
