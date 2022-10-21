@@ -1,2 +1,2 @@
 # miautentic
-https://jeanccana.github.io/miautentic/
+https://jeeanncy.github.io/miautentic/
